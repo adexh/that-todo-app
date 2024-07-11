@@ -23,13 +23,12 @@ export default function todo(props: { task: { title: string, description: string
           </CardTitle>
           <CardDescription className="text-md">
           {<Badge variant={"outline"} className="shadow">
-              <p>{props.task.title}</p>
+              <div>{props.task.title}</div>
             </Badge>}
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <p>{props.task.description}</p>
-
+          <div>{props.task.description}</div>
         </CardContent>
       </Card>
     </div>
